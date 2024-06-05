@@ -2,7 +2,6 @@
 # Необходимо вывести имена всех учеников из списка с новой строки
 
 names = ['Оля', 'Петя', 'Вася', 'Маша']
-# ???
 for i in range(len(names)):
     print(names[i], "\n")
 
@@ -12,17 +11,16 @@ for i in range(len(names)):
 # Пример вывода:
 # Оля: 3
 # Петя: 4
-str = ''
+str_of_names = ''
 names = ['Оля', 'Петя', 'Вася', 'Маша']
 for n in range(len(names)):
-    str = names[n]
-    print(names[n],": ",len(str), "\n")
+    str_of_names = names[n]
+    print(names[n],": ",len(str_of_names), "\n")
 
 
 
 # Задание 3
 # Необходимо вывести имена всех учеников из списка, рядом с именем вывести пол ученика
-str = ''
 is_male = {
     'Оля': False,  # если False, то пол женский
     'Петя': True,  # если True, то пол мужской

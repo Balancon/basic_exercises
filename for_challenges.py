@@ -3,7 +3,7 @@
 
 names = ['Оля', 'Петя', 'Вася', 'Маша']
 for i in range(len(names)):
-    print(names[i], "\n")
+    print(f'{names[i]}\n')
 
 
 # Задание 2
@@ -15,7 +15,7 @@ str_of_names = ''
 names = ['Оля', 'Петя', 'Вася', 'Маша']
 for n in range(len(names)):
     str_of_names = names[n]
-    print(names[n],": ",len(str_of_names), "\n")
+    print(f'{names[n]}: {len(str_of_names)}\n')
 
 
 
@@ -31,9 +31,9 @@ names = ['Оля', 'Петя', 'Вася', 'Маша']
 
 for m in range(len(names)):
     if is_male.get(names[m]) == True: #True
-        print(names[m],": мужской", "\n")
+        print(f'{names[m]}: мужской\n')
     else: #False
-        print(names[m],": женский", "\n")
+        print(f'{names[m]}: женский\n')
 
 # Задание 4
 # Даны группы учеников. Нужно вывести количество групп и для каждой группы – количество учеников в ней
@@ -47,9 +47,9 @@ groups = [
     ['Вася', 'Маша', 'Саша', 'Женя'],
     ['Оля', 'Петя', 'Гриша'],
 ]
-print('Всего', len(groups),'группы.')
+print(f'Всего {len(groups)} группы.')
 for x in range(len(groups)):
-    print('Группа', x+1, ':', len(groups[x]), 'ученика.')
+    print(f'Группа {x+1}: {len(groups[x])} ученика.')
 
 
 # Задание 5
@@ -66,4 +66,4 @@ groups = [
 print('\n')
 for y in range(len(groups)):
     names = (', '.join(groups[y]))
-    print('Группа', y+1, ':', names)
+    print(f'Группа {y+1}: {names}')
